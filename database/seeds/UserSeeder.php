@@ -19,7 +19,7 @@ class UserSeeder extends Seeder
         $user = new User();
         $user->name 	= 'John Smith';
         $user->email 	= 'manager@hr.com';
-        $user->password = bycript('manager');
+        $user->password = bcrypt('manager');
         $user->role_id 	= UserRole::MANAGER;
 
         $user->save();
@@ -28,7 +28,7 @@ class UserSeeder extends Seeder
         $user = new User();
         $user->name 	= 'Jane Doe';
         $user->email 	= 'moderator@hr.com';
-        $user->password = bycript('moderator');
+        $user->password = bcrypt('moderator');
         $user->role_id 	= UserRole::MODERATOR;
 
         $user->save();

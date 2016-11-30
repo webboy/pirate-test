@@ -1,5 +1,5 @@
 <?php  
-namespace Caloboo\Traits;
+namespace App\Traits;
 
 trait TranslatableConstantModelTrait
 {
