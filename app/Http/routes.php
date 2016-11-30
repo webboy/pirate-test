@@ -17,7 +17,7 @@ Route::get('/', function () {
 
 Route::auth();
 
-Route::resource('jobs','JobController',['only'=>['store']]);
+Route::resource('jobs','JobController',['only'=>['store','destroy']]);
 Route::get('jobs/publish/{jobs}','JobController@publish');
 Route::get('jobs/spam/{jobs}','JobController@spam');
 

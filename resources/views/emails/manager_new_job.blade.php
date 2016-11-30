@@ -1,0 +1,1 @@
+Your job posting "{{ $job->title }}" is in moderation. It will be published once moderator checks it.

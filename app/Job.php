@@ -4,6 +4,8 @@ namespace App;
 
 use Illuminate\Database\Eloquent\Model;
 
+use URL;
+
 class Job extends Model
 {
     /**
@@ -36,6 +38,21 @@ class Job extends Model
     public function scopePublished($query)
     {
         return $query->where('status', 1);
+    }
+
+    public static function unpublished()
+    {
+        return self::where('status',0);
+    }
+
+    public function publish_url()
+    {
+        return URL::to('jobs/publish/'.$this->id);
+    }
+
+    public function spam_url()
+    {
+        return URL::to('jobs/spam/'.$this->id);
     }
     
 }
