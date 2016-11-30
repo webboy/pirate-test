@@ -27,6 +27,9 @@ class RouteServiceProvider extends ServiceProvider
         //
 
         parent::boot($router);
+
+        //Route model binding
+        $router->model('jobs','App\Job');
     }
 
     /**

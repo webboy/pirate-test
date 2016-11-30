@@ -26,4 +26,16 @@ class Job extends Model
     {
         return $this->belongsTo('App\User','user_id');
     }
+
+    /**
+     * Scope a query to only include published jobs.
+     *
+     * @param \Illuminate\Database\Eloquent\Builder $query
+     * @return \Illuminate\Database\Eloquent\Builder
+     */
+    public function scopePublished($query)
+    {
+        return $query->where('status', 1);
+    }
+    
 }

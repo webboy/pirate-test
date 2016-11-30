@@ -19,7 +19,8 @@ class CreateJobsTable extends Migration
             $table->string('title');
             $table->text('description');
             $table->string('email');
-            $table->integer('user_id')->default(0)->index()->comment('ID of the user who created the post');            
+            $table->integer('user_id')->default(0)->index()->comment('ID of the user who created the post');      
+            $table->tinyInteger('status')->default(0)->unsigned()->index();
             $table->timestamps();
         });
     }
