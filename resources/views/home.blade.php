@@ -8,7 +8,23 @@
                 <div class="panel-heading">Post a Job</div>
 
                 <div class="panel-body">
-                    Form goes here
+                    {!! Form::open(['url' => 'jobs/create']) !!}
+                        <div class="form-group">
+                            <label>Title</label>
+                            <input type="text" name="title" class="form-control" value="{{ old('title') }}" />
+                        </div>
+                        <div class="form-group">
+                            <label>Email</label>
+                            <input type="email" name="email" class="form-control" value="{{ old('email') }}" />
+                        </div>
+                        <div class="form-group">
+                            <label>Description</label>
+                            <textarea name="description" class="form-control">{{ old('description') }}</textarea>   
+                        </div>
+                        <div class="form-group">
+                            <button type="submit" class="btn btn-success">Add Job</button>
+                        </div>
+                    {!! Form::close() !!}
                 </div>
             </div>
         </div>
