@@ -1,28 +1,53 @@
-# Laravel PHP Framework
+# Pirate Software test assignment
 
-[![Build Status](https://travis-ci.org/laravel/framework.svg)](https://travis-ci.org/laravel/framework)
-[![Total Downloads](https://poser.pugx.org/laravel/framework/d/total.svg)](https://packagist.org/packages/laravel/framework)
-[![Latest Stable Version](https://poser.pugx.org/laravel/framework/v/stable.svg)](https://packagist.org/packages/laravel/framework)
-[![Latest Unstable Version](https://poser.pugx.org/laravel/framework/v/unstable.svg)](https://packagist.org/packages/laravel/framework)
-[![License](https://poser.pugx.org/laravel/framework/license.svg)](https://packagist.org/packages/laravel/framework)
+My test assignment for Pirate Software job application written in PHP using Laravel 5.2
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable, creative experience to be truly fulfilling. Laravel attempts to take the pain out of development by easing common tasks used in the majority of web projects, such as authentication, routing, sessions, queueing, and caching.
+## Task Description
 
-Laravel is accessible, yet powerful, providing tools needed for large, robust applications. A superb inversion of control container, expressive migration system, and tightly integrated unit testing support give you the tools you need to build any application with which you are tasked.
+Back‐end programming assignment
 
-## Official Documentation
+In a context of hypothetical job board project, please implement following user stories:
 
-Documentation for the framework can be found on the [Laravel website](http://laravel.com/docs).
+User Story 1
 
-## Contributing
+As a HR manager I would like to go to job submission page, fill out a form and publish a job
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](http://laravel.com/docs/contributions).
+offer.
 
-## Security Vulnerabilities
+COS:
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell at taylor@laravel.com. All security vulnerabilities will be promptly addressed.
+● new job form should contain title, description and email field.
 
-## License
+● when i hit submit button, if this is my first job posting i should receive email saying that
 
-The Laravel framework is open-sourced software licensed under the [MIT license](http://opensource.org/licenses/MIT).
-"# pirate-test" 
+my submission is in moderation, otherwise it should be public/published.
+
+User Story 2
+
+As a job board moderator i would like to receive email every time someone posts a job for a first
+
+time.
+
+COS:
+
+● every time someone posts a job for a first time (based on email address) i should receive
+
+email about it
+
+● email notification should contain title and description of submission, as well as links to
+
+approve (publish) or mark it as a spam.
+
+Instructions
+
+To complete this task, please use one of the modern, composer based PHP frameworks.
+
+Please note that main things that we are going to evaluate are good practices in
+
+application design and architecture.
+
+Once you have task completed push code to publicly available git repository (github or similar)
+
+and send us repository url. 
+
+
